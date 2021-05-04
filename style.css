@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+body {
+    background-color: rgb(2, 105, 2);
+    font-family: DotGothic16;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 276px;
+    height: 183px;
+    align-items: center;
+    background-image: url(./img/images.jpeg);
+}
+
+h1 {
+    color: black;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 30px
+}
+
+
+aside.titulos {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+aside.infos {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 41vh;
+    justify-content: space-between;
+}
+
+div#container-resultado {
+    width: 30vw;
+    height: 71vw;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    color: black;
+    align-self: end;
+    margin-left: 45px;
+}
+
+#container-resultado p {
+    margin: 0 27px;
+}
+
+.resultadoTitle {
+    letter-spacing: 2px;
+    margin-left: 21px;
+    margin-bottom: 2px;
+    height: 38px;
+}
+
+.estatisticaTitle {
+    letter-spacing: 1px;    margin-bottom: 2px;
+    height: 38px;
+    margin-right: 16px;
+}
+
+div#estatistica {
+    width: 37vw;
+    height: 71vw;
+    display: flex;
+    margin-right: 36px;
+    flex-direction: column;
+}
+
+#estatistica div {
+    height: 27px;
+    background-color: #5d2d65d6;
+}
+
+h3 {
+    font-size: 25px;
+    color: #000a40;
+}
+
+button {
+    border: none;
+    padding: 11px;
+    width: 240px;
+    height: 140px;
+    color: #a90606;
+    font-size: 40px;
+    font-family: "RocknRoll One";
+    border-radius: 10px;
+    margin-bottom: 12px;
+    background-image: url(./img/footer.png);
+}
+
+@media only screen and (min-width: 400px) {
+    aside.infos {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 100vw;
+        height: 75vw;
+        justify-content: space-between;
+        
+    }
+    
+    div#container-resultado {
+        width: 25vw;
+        height: 58vw;
+        align-self: end;
+        margin-left: 59px;
+        margin-bottom: 15px;
+    }
+
+    div#estatistica {
+        width: 37vw;
+        height: 58vw;
+        position: absolute;
+        left: 55%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    aside.infos {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 75vw; 
+        position: relative;
+        justify-content: space-between;
+    }
+
+    div#container-resultado {
+        width: 17vw;
+        height: 43vw;
+        align-self: end;
+        margin-left: 108px;
+        margin-bottom: 20px;
+    }
+
+    div#estatistica {
+        width: 215px;
+        height: 43vw;
+        display: flex;
+        position: absolute;
+        left: 61%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    aside.infos {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 35vw;
+        justify-content: space-between;
+    }
+
+    div#container-resultado {
+        align-self: end;
+        width: 12vw;
+        height: 265px;
+        margin-left: 166px;
+        margin-bottom: 20px;
+    }
+
+    div#estatistica {
+        width: 37vw;
+        height: 265px;
+        margin-right: 36px;
+        padding-left: 36px;
+    }
+}
+    
+
+@media only screen and (min-width: 1000px) {
+    aside.infos {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 25vw;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    div#container-resultado {
+        align-self: end;
+        margin-left: 218px;
+        width: 10vw;
+        margin-bottom: 20px;
+    }
+
+    div#estatistica {
+        width: 37vw;
+        height: 25vw;
+        padding-left: 61px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    aside.infos {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 22vw;
+        justify-content: space-between;
+    }
+    
+    div#container-resultado {
+        width: 8vw;
+        height: 21vw;
+        margin-left: 277px;
+        margin-bottom: 20px;
+    }
+
+    div#estatistica {
+        width: 37vw;
+        height: 21vw;
+        padding-left: 98px;
+    }
+}
